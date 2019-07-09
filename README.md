@@ -1,5 +1,5 @@
 # Face Recognition Brain
 
-This app allows the user to login and enter the URL of a picture. It will scan that picture for faces and identify them on the image.
+After registering with the system the user may submit the URL of a picture. The application will then scan the image for a face and identify it by placing a box around it.
 
-It will also track and rank users based on the number of images they check.
+The user information along with a count of the number of images submitted are stored in a PostgreSQL database.
