@@ -115,10 +115,9 @@ export default class App extends Component {
             <ImageLinkForm onInputChange = {this.onInputChange} onButtonSubmit = {this.onButtonSubmit} />
             <FaceRecognition box = {box}  imageUrl = {imageUrl} />
           </div>
-        : (route === 'signin'
+        : (route === 'signin' || route === 'signout')
           ? <SignIn loadUser = {this.loadUser} onRouteChange = {this.onRouteChange} />
           : <Register loadUser={this.loadUser} onRouteChange = {this.onRouteChange} />
-          )
       }
     </div>
     )
